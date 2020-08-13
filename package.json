@@ -6,12 +6,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
-    "autoprefixer": "^9.8.6",
     "tailwindcss": "^1.6.2"
   },
   "scripts": {
@@ -19,7 +20,7 @@
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css", 
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
     "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css"
   },
   "eslintConfig": {
