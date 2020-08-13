@@ -9,7 +9,7 @@ const GetCategories = () => dispatch => {
     .then(result => {
       dispatch({
         type: CATEGORY_LIST_SUCCESS,
-        payload: result,
+        payload: result.meals,
       });
     })
     .catch(error => {

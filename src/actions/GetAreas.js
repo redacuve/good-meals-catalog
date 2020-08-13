@@ -9,7 +9,7 @@ const GetAreas = () => dispatch => {
     .then(result => {
       dispatch({
         type: AREA_LIST_SUCCESS,
-        payload: result,
+        payload: result.meals,
       });
     })
     .catch(error => {
