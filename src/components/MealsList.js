@@ -8,10 +8,10 @@ function MealsList(props) {
     <div>
       <h2>{title}</h2>
       <div>
-        {data.map((meal) => (
+        {data.map(meal => (
           <div key={meal[str]}>
             <h3>{meal[str]}</h3>
-            <img src={'/assets/img/'+ meal[str] + '.jpg'} alt={meal[str]} />
+            <img src={`/assets/img/${meal[str]}.jpg`} alt={meal[str]} />
             <Link to={`/area/${meal[str]}`}>View Category</Link>
           </div>
         ))}
