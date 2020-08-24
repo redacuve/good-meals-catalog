@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import IndexRoot from '../containers/IndexRoot';
 import SearchMeals from './SearchMeals';
 import CategoryList from '../containers/CategoryList';
-import SingleMeal from './SingleMeal';
+import SingleMeal from '../containers/SingleMeal';
 import AreaList from '../containers/AreaList';
 
 function App() {
