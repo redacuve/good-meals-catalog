@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
 import IndexRoot from '../containers/IndexRoot';
 import SearchMeals from './SearchMeals';
+import CategoryList from '../containers/CategoryList';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" exact component={IndexRoot} />
         <Route path="/search/:term" exact component={SearchMeals} />
         <Route path="/area/:term" exact component={SearchMeals} />
-        <Route path="/category/:term" exact component={SearchMeals} />
+        <Route path="/category/:term" exact component={CategoryList} />
         <Redirect to="/" />
       </Switch>
     </div>
