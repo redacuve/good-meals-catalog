@@ -1,32 +1,34 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import GetCategories from '../actions/GetCategories';
 import GetAreas from '../actions/GetAreas';
 import MealsList from '../components/MealsList';
+import FullCategoriesList from '../components/FullCategoriesList';
+import GetFullCategories from '../actions/GetFullCategories';
 
 function IndexRoot() {
   const dispatch = useDispatch();
   React.useEffect(() => {
-    dispatch(GetCategories());
     dispatch(GetAreas());
+    dispatch(GetFullCategories());
   }, [dispatch]);
-  const mealCategories = useSelector(state => state.CategoriesList);
   const mealAreas = useSelector(state => state.AreasList);
-  if (mealCategories.loading === true || mealAreas.loading === true) {
+  const fullMealCategories = useSelector(state => state.FullCategoriesList);
+  if (fullMealCategories.loading === true || mealAreas.loading === true) {
     return <div>Loading...</div>;
   }
-  if (mealCategories.errorMsg !== '' || mealAreas.errorMsg !== '') {
+  if (fullMealCategories.errorMsg !== '' || mealAreas.errorMsg !== '') {
     return (
       <div>
         <h2>An error has occured</h2>
-        <p>{mealCategories.errorMsg}</p>
+        <p>{fullMealCategories.errorMsg}</p>
+        <p>{mealAreas.errorMsg}</p>
       </div>
     );
   }
   return (
     <div>
-      <MealsList title="Areas" data={mealAreas.areas.meals} str="strArea" />
-      <MealsList title="Categories" data={mealCategories.categories.meals} str="strCategory" />
+      <FullCategoriesList list={fullMealCategories.categories} />
+      <MealsList title="Areas" data={mealAreas.areas} str="strArea" />
     </div>
   );
 }
