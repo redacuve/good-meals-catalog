@@ -1,12 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import GetCategory from '../actions/GetCategory';
 
 function CategoryList(props) {
-  const { match: { params: { term } } } = props;
+  const {
+    match: {
+      params: { term },
+    },
+  } = props;
+  const dispatch = useDispatch();
+  React.useEffect(() => {
+    dispatch(GetCategory(term));
+  }, [dispatch, term]);
+  const meals = useSelector(state => state.CategoryList);
+  if (meals.loading === true) {
+    return <div>Loading...</div>;
+  }
+  if (meals.errorMsg !== '') {
+    return (
+      <div>
+        <h2>An error has occured</h2>
+        <p>{meals.errorMsg}</p>
+      </div>
+    );
+  }
   return (
     <div>
       Category Search:
-      { term }
+      {term}
+      <div>
+        {
+            meals.meals.map(meal => (
+              <div key={meal.strMeal}>
+                <h3>{meal.strMeal}</h3>
+                <img src={meal.strMealThumb} alt={meal.strMeal} />
+                <Link to={`/meal/${meal.idMeal}`}>View Meal</Link>
+              </div>
+            ))
+          }
+      </div>
     </div>
   );
 }
