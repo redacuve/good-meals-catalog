@@ -5,6 +5,7 @@ import IndexRoot from '../containers/IndexRoot';
 import SearchMeals from './SearchMeals';
 import CategoryList from '../containers/CategoryList';
 import SingleMeal from './SingleMeal';
+import AreaList from '../containers/AreaList';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={IndexRoot} />
         <Route path="/search/:term" exact component={SearchMeals} />
-        <Route path="/area/:term" exact component={SearchMeals} />
+        <Route path="/area/:term" exact component={AreaList} />
         <Route path="/category/:term" exact component={CategoryList} />
         <Route path="/meal/:id" exact component={SingleMeal} />
         <Redirect to="/" />
