@@ -28,7 +28,7 @@ function SingleMeal(props) {
   const ingredients = [];
   for (let i = 1; i < 21; i += 1) {
     if (meal.meal[`strIngredient${i}`] !== '' && meal.meal[`strIngredient${i}`] !== null) {
-      ingredients.push(`${meal.meal[`strMeasure${i}`]} / ${meal.meal[`strIngredient${i}`]}`);
+      ingredients.push(`${meal.meal[`strMeasure${i}`]} - ${meal.meal[`strIngredient${i}`]}`);
     }
   }
   return (
@@ -55,10 +55,11 @@ function SingleMeal(props) {
         <h3>Ingredients:</h3>
         <div>
           <ul>
-            <li>Measure / Ingredient</li>
+            <li>Measure - Ingredient</li>
             {
-            ingredients.map(e => (
-              <li key={e}>{e}</li>
+            ingredients.map((e, i) => (
+              // eslint-disable-next-line
+              <li key={i}>{e}</li> 
             ))
           }
           </ul>
