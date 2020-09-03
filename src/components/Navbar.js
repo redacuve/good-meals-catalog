@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import logo from '../assets/img/goodmeals.png';
-import { Link } from 'react-router-dom';
 
 function Navbar() {
   const inputSearch = useRef(null);
@@ -15,7 +14,7 @@ function Navbar() {
       <div className="w-full bg-gray-100 border-b border-grey-light">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between py-4">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Good Meals Logo" className="h-12"/>
+            <img src={logo} alt="Good Meals Logo" className="h-12" />
             <h1 className="font-bold text-indigo-900 text-base font-extrabold text-xl w-minc ml-1 leading-5">Good Meals Catalog</h1>
           </Link>
           <div className="">
