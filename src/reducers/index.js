@@ -7,6 +7,7 @@ import AreaReducer from './AreaReducer';
 import MealReducer from './MealReducer';
 import SearchReducer from './SearchReducer';
 import AreasFilterReducer from './AreasFilterReducer';
+import CategoriesFilterReducer from './CategoriesFilterReducer';
 
 const rootReducer = combineReducers({
   CategoriesList: CategoriesListReducer,
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
   Meal: MealReducer,
   Search: SearchReducer,
   AreasFilter: AreasFilterReducer,
+  CategoriesFilter: CategoriesFilterReducer,
 });
 
 export default rootReducer;
