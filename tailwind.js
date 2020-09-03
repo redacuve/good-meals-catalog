@@ -427,6 +427,7 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      minc: 'min-content',
     }),
     zIndex: {
       auto: 'auto',
