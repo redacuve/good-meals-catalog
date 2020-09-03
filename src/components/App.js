@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
 import IndexRoot from '../containers/IndexRoot';
-import SearchMeals from './SearchMeals';
+import SearchMeals from '../containers/SearchMeals';
 import CategoryList from '../containers/CategoryList';
 import SingleMeal from '../containers/SingleMeal';
 import AreaList from '../containers/AreaList';
