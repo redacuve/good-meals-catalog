@@ -4,6 +4,8 @@ import GetAreas from '../actions/GetAreas';
 import MealsList from '../components/MealsList';
 import FullCategoriesList from '../components/FullCategoriesList';
 import GetFullCategories from '../actions/GetFullCategories';
+import Filter from '../components/Filter';
+import { changeAreasFilter } from '../actions/ChangeAreasFilter';
 
 function IndexRoot() {
   const dispatch = useDispatch();
@@ -11,8 +13,24 @@ function IndexRoot() {
     dispatch(GetAreas());
     dispatch(GetFullCategories());
   }, [dispatch]);
-  const mealAreas = useSelector(state => state.AreasList);
+
   const fullMealCategories = useSelector(state => state.FullCategoriesList);
+  const categoriesMeals = [];
+  const categoriesMealsFiltered = [];
+  fullMealCategories.categories.map(m => categoriesMeals.push(m.strCategory));
+
+  const mealAreas = useSelector(state => state.AreasList);
+  const areasFilter = useSelector(state => state.AreasFilter.filter);
+  const areasMeals = [];
+  mealAreas.areas.map(m => areasMeals.push(m.strArea));
+  let areasMealsFiltered = [];
+  if (areasFilter !== '') {
+    areasMealsFiltered = mealAreas.areas.filter(m => m.strArea === areasFilter);
+  } else {
+    areasMealsFiltered = [...mealAreas.areas];
+  }
+  const handleAreasFilterChange = filter => dispatch(changeAreasFilter(filter));
+
   if (fullMealCategories.loading === true || mealAreas.loading === true) {
     return <div>Loading...</div>;
   }
@@ -27,8 +45,16 @@ function IndexRoot() {
   }
   return (
     <div>
+      <Filter
+        categories={categoriesMeals}
+        changeFilter={a => console.log(a)}
+      />
       <FullCategoriesList list={fullMealCategories.categories} />
-      <MealsList title="Areas" data={mealAreas.areas} str="strArea" />
+      <Filter
+        categories={areasMeals}
+        changeFilter={handleAreasFilterChange}
+      />
+      <MealsList title="Areas" data={areasMealsFiltered} str="strArea" />
     </div>
   );
 }
