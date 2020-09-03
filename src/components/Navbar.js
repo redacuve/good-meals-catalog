@@ -15,7 +15,9 @@ function Navbar() {
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between py-4">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Good Meals Logo" className="h-12" />
-            <h1 className="font-bold text-indigo-900 text-base font-extrabold text-xl w-minc ml-1 leading-5">Good Meals Catalog</h1>
+            <h1 className="font-bold text-indigo-900 text-base font-extrabold text-xl w-minc ml-1 leading-5">
+              Good Meals Catalog
+            </h1>
           </Link>
           <div className="">
             <input
@@ -23,6 +25,11 @@ function Navbar() {
               type="search"
               ref={inputSearch}
               id="seachbar"
+              onKeyPress={e => {
+                if (e.key === 'Enter') {
+                  onSearch();
+                }
+              }}
             />
             <button
               className="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full"
