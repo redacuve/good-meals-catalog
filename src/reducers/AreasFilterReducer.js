@@ -1,8 +1,8 @@
-import { CHANGE_FILTER } from '../actions/ChangeAreasFilter';
+import { CHANGE_AREA_FILTER } from '../actions/ChangeAreasFilter';
 
 function AreasFilterReducer(state = { filter: '' }, action) {
   switch (action.type) {
-    case CHANGE_FILTER:
+    case CHANGE_AREA_FILTER:
       if (action.payload === 'All') {
         return {
           filter: '',
