@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import GetCategory from '../actions/GetCategory';
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 function CategoryList(props) {
   const {
@@ -20,12 +21,7 @@ function CategoryList(props) {
     return <Loading />;
   }
   if (meals.errorMsg !== '') {
-    return (
-      <div>
-        <h2>An error has occured</h2>
-        <p>{meals.errorMsg}</p>
-      </div>
-    );
+    return <Error errors={[meals.errorMsg]} />;
   }
   return (
     <div>

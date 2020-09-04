@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import GetMeal from '../actions/GetMeal';
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 function SingleMeal(props) {
   const {
@@ -19,12 +20,7 @@ function SingleMeal(props) {
     return <Loading />;
   }
   if (meal.errorMsg !== '') {
-    return (
-      <div>
-        <h2>An error has occured</h2>
-        <p>{meal.errorMsg}</p>
-      </div>
-    );
+    return <Error errors={[meal.errorMsg]} />;
   }
   const ingredients = [];
   for (let i = 1; i < 21; i += 1) {

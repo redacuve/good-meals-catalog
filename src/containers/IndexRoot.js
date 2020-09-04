@@ -8,6 +8,7 @@ import Filter from '../components/Filter';
 import { changeAreasFilter } from '../actions/ChangeAreasFilter';
 import { changeCategoriesFilter } from '../actions/ChangeCategoriesFilter';
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 function IndexRoot() {
   const dispatch = useDispatch();
@@ -50,13 +51,7 @@ function IndexRoot() {
     return <Loading />;
   }
   if (fullMealCategories.errorMsg !== '' || mealAreas.errorMsg !== '') {
-    return (
-      <div>
-        <h2>An error has occured</h2>
-        <p>{fullMealCategories.errorMsg}</p>
-        <p>{mealAreas.errorMsg}</p>
-      </div>
-    );
+    return <Error errors={[fullMealCategories.errorMsg, mealAreas.errorMsg]} />;
   }
   return (
     <div className="flex flex-wrap">

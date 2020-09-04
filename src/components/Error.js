@@ -23,7 +23,7 @@ function Error(props) {
             An error has ocurred, Please try again later.
           </p>
           <ul className="list-disc">
-            {errors.map((error) => (
+            {errors.map(error => (
               <li className="text-sm" key={error}>
                 {error}
               </li>
