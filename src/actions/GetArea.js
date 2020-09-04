@@ -7,10 +7,17 @@ const GetArea = term => dispatch => {
   fetch(URL(term))
     .then(response => response.json())
     .then(result => {
-      dispatch({
-        type: AREA_SUCCESS,
-        payload: result.meals,
-      });
+      if (result.meals !== null) {
+        dispatch({
+          type: AREA_SUCCESS,
+          payload: result.meals,
+        });
+      } else {
+        dispatch({
+          type: AREA_ERROR,
+          payload: '404 Not Results found',
+        });
+      }
     })
     .catch(error => {
       dispatch({

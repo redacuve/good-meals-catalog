@@ -6,7 +6,7 @@ import GetArea from '../actions/GetArea';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
 
-function CategoryList(props) {
+function AreaList(props) {
   const {
     match: {
       params: { term },
@@ -26,7 +26,7 @@ function CategoryList(props) {
   return (
     <div className="p-1">
       <h2 className="text-orange-900 font-bold text-2xl">
-        Category Search:&nbsp;
+        Area Search:&nbsp;
         <span className="font-extrabold underline italic">{term}</span>
       </h2>
       <div className="flex flex-wrap items-center">
@@ -58,7 +58,7 @@ function CategoryList(props) {
   );
 }
 
-CategoryList.propTypes = {
+AreaList.propTypes = {
   match: PropTypes.shape({
     isExact: PropTypes.bool.isRequired,
     params: PropTypes.shape({
@@ -69,4 +69,4 @@ CategoryList.propTypes = {
   }).isRequired,
 };
 
-export default CategoryList;
+export default AreaList;
