@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import GetSearch from '../actions/GetSearch';
+import Loading from '../components/Loading';
 
 function SearchMeals(props) {
   const {
@@ -16,7 +17,7 @@ function SearchMeals(props) {
   }, [dispatch, term]);
   const meals = useSelector(state => state.Search);
   if (meals.loading === true) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
   if (meals.errorMsg !== '') {
     return (

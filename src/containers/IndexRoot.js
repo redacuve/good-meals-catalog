@@ -7,6 +7,7 @@ import GetFullCategories from '../actions/GetFullCategories';
 import Filter from '../components/Filter';
 import { changeAreasFilter } from '../actions/ChangeAreasFilter';
 import { changeCategoriesFilter } from '../actions/ChangeCategoriesFilter';
+import Loading from '../components/Loading';
 
 function IndexRoot() {
   const dispatch = useDispatch();
@@ -16,7 +17,9 @@ function IndexRoot() {
   }, [dispatch]);
 
   const fullMealCategories = useSelector(state => state.FullCategoriesList);
-  const categoriesFilter = useSelector(state => state.CategoriesFilter.filter);
+  const categoriesFilter = useSelector(
+    state => state.CategoriesFilter.filter,
+  );
   const categoriesMeals = [];
   fullMealCategories.categories.map(m => categoriesMeals.push(m.strCategory));
   let categoriesMealsFiltered = [];
@@ -44,7 +47,7 @@ function IndexRoot() {
   const handleAreasFilterChange = filter => dispatch(changeAreasFilter(filter));
 
   if (fullMealCategories.loading === true || mealAreas.loading === true) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
   if (fullMealCategories.errorMsg !== '' || mealAreas.errorMsg !== '') {
     return (
@@ -56,14 +59,21 @@ function IndexRoot() {
     );
   }
   return (
-    <div>
-      <Filter
-        categories={categoriesMeals}
-        changeFilter={handleCategoriesFilterChange}
-      />
-      <FullCategoriesList list={categoriesMealsFiltered} />
-      <Filter categories={areasMeals} changeFilter={handleAreasFilterChange} />
-      <MealsList title="Areas" data={areasMealsFiltered} str="strArea" />
+    <div className="flex flex-wrap">
+      <div className="w-full lg:w-1/2 p-5">
+        <Filter
+          categories={categoriesMeals}
+          changeFilter={handleCategoriesFilterChange}
+        />
+        <FullCategoriesList list={categoriesMealsFiltered} />
+      </div>
+      <div className="w-full lg:w-1/2 p-5">
+        <Filter
+          categories={areasMeals}
+          changeFilter={handleAreasFilterChange}
+        />
+        <MealsList title="Areas" data={areasMealsFiltered} str="strArea" />
+      </div>
     </div>
   );
 }

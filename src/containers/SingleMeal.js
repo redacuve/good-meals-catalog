@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import GetMeal from '../actions/GetMeal';
+import Loading from '../components/Loading';
 
 function SingleMeal(props) {
   const {
@@ -15,7 +16,7 @@ function SingleMeal(props) {
   }, [dispatch, id]);
   const meal = useSelector(state => state.Meal);
   if (meal.loading === true) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
   if (meal.errorMsg !== '') {
     return (

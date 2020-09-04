@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import GetArea from '../actions/GetArea';
+import Loading from '../components/Loading';
 
 function CategoryList(props) {
   const {
@@ -16,7 +17,7 @@ function CategoryList(props) {
   }, [dispatch, term]);
   const meals = useSelector(state => state.AreaList);
   if (meals.loading === true) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
   if (meals.errorMsg !== '') {
     return (
