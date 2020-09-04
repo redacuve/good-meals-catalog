@@ -24,48 +24,91 @@ function SingleMeal(props) {
   }
   const ingredients = [];
   for (let i = 1; i < 21; i += 1) {
-    if (meal.meal[`strIngredient${i}`] !== '' && meal.meal[`strIngredient${i}`] !== null) {
-      ingredients.push(`${meal.meal[`strMeasure${i}`]} - ${meal.meal[`strIngredient${i}`]}`);
+    if (
+      meal.meal[`strIngredient${i}`] !== ''
+      && meal.meal[`strIngredient${i}`] !== null
+    ) {
+      ingredients.push(
+        `${meal.meal[`strMeasure${i}`]} - ${meal.meal[`strIngredient${i}`]}`,
+      );
     }
   }
   return (
-    <div>
-      <h2>{meal.meal.strMeal}</h2>
-      <div>
-        <img src={meal.meal.strMealThumb} alt={meal.meal.strMeal} />
+    <div className="p-1 shadow border rounded bg-white max-w-screen-lg mx-auto">
+      <div className="w-full bg-indigo-300">
+        <h2 className="font-bold text-2xl pl-3">{meal.meal.strMeal}</h2>
       </div>
-      <div>
-        <div>
-          <img src={`/assets/img/${meal.meal.strArea}.jpg`} alt={meal.meal.strArea} />
-          <p>{meal.meal.strArea}</p>
+      <div className="flex flex-wrap items-center">
+        <div className="mb-2 sm:w-2/3 md:w-1/2 mx-auto md:p-1">
+          <img
+            className="w-full"
+            src={meal.meal.strMealThumb}
+            alt={meal.meal.strMeal}
+          />
         </div>
-        <p>
-          Source:
-          <a href={meal.meal.strSource}>{meal.meal.strSource}</a>
-        </p>
-        <p>
-          Watch on Youtube:
-          <a href={meal.meal.strYoutube}>{meal.meal.strYoutube}</a>
-        </p>
-      </div>
-      <div>
-        <h3>Ingredients:</h3>
-        <div>
-          <ul>
-            <li>Measure - Ingredient</li>
-            {
-            ingredients.map((e, i) => (
-              // eslint-disable-next-line
-              <li key={i}>{e}</li> 
-            ))
-          }
-          </ul>
+        <div className="mb-2 w-full sm:w-3/4 md:w-1/2 lg:w-2/3 lg:order-3 mx-auto">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="w-1/3 pr-1">
+              <img
+                className="w-full"
+                src={`/assets/img/${meal.meal.strArea}.jpg`}
+                alt={meal.meal.strArea}
+              />
+              <div className="w-full bg-orange-300 text-center">
+                <p className="font-bold">{meal.meal.strArea}</p>
+              </div>
+            </div>
+            <div className="w-2/3">
+              <p className="bg-gray-800 text-white font-bold">Source:</p>
+              <div className="overflow-x-auto">
+                <a
+                  className="cursor-pointer text-underline text-blue-700 text-sm md:text-base lg:text-lg"
+                  href={meal.meal.strSource}
+                >
+                  {meal.meal.strSource}
+                </a>
+              </div>
+              <p className="bg-gray-800 text-white font-bold">
+                Watch on Youtube:
+              </p>
+              <div className="overflow-x-auto">
+                <a
+                  className="cursor-pointer text-underline text-blue-700 text-sm md:text-base lg:text-lg"
+                  href={meal.meal.strYoutube}
+                >
+                  {meal.meal.strYoutube}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div className="mb-2 w-full lg:order-2 lg:w-1/2">
+          <div className="w-full bg-indigo-300 lg:mt-1">
+            <h3 className="font-bold text-2xl pl-3">Ingredients:</h3>
+          </div>
+          <div>
+            <ul className="px-3 md:text-lg lg:text-xl">
+              <li className="pl-1 bg-orange-300">
+                <span className="font-bold">Measure - Ingredient</span>
+              </li>
+              {ingredients.map((e, i) => (
+                // eslint-disable-next-line
+                <li className="pl-1 text-gray-800" key={i}>
+                  {e}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       <div>
-        <h3>Instructions:</h3>
-        <p className="whitespace-pre-line">{ meal.meal.strInstructions }</p>
+        <div className="w-full bg-indigo-300">
+          <h3 className="font-bold text-2xl px-3">Instructions:</h3>
+        </div>
+        <p className="whitespace-pre-line text-lg lg:text-2xl text-gray-800 pl-3">
+          {meal.meal.strInstructions}
+        </p>
       </div>
     </div>
   );
