@@ -7,10 +7,17 @@ const GetCategory = term => dispatch => {
   fetch(URL(term))
     .then(response => response.json())
     .then(result => {
-      dispatch({
-        type: CATEGORY_SUCCESS,
-        payload: result.meals,
-      });
+      if (result.meals !== null) {
+        dispatch({
+          type: CATEGORY_SUCCESS,
+          payload: result.meals,
+        });
+      } else {
+        dispatch({
+          type: CATEGORY_ERROR,
+          payload: '404 Not Results found',
+        });
+      }
     })
     .catch(error => {
       dispatch({
