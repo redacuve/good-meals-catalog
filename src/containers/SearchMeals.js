@@ -25,34 +25,50 @@ function SearchMeals(props) {
   }
   if (meals.meals === null) {
     return (
-      <div>
-        <h2>
-          Oops No Results for:
-          {' '}
-          <span>{term}</span>
+      <div className="p1">
+        <h2 className="text-orange-900 font-bold text-2xl">
+          Oops No Results for:&nbsp;
+          <i className="fas fa-ban" />
+          &nbsp;
+          <span className="font-extrabold underline italic">{term}</span>
         </h2>
-        <p>Please try another search.</p>
+        <p className="text-orange-900 text-2xl">Please try another search.</p>
       </div>
     );
   }
   return (
-    <div>
-      <h2>
+    <div className="p-1">
+      <h2 className="text-indigo-900 font-bold text-2xl">
         Showing Result for:&nbsp;
-        <span>{term}</span>
+        <span className="font-extrabold underline italic">{term}</span>
       </h2>
-      <div>
+      <h3 className="text-orange-900 font-bold">
         {meals.meals.length}
-        {' '}
-        Result(s)
-      </div>
-      <div>
+        &nbsp;Result(s)
+      </h3>
+      <div className="flex flex-wrap items-center">
         {meals.meals.map(meal => (
-          <div key={meal.strMeal}>
-            <h3>{meal.strMeal}</h3>
-            <img src={meal.strMealThumb} alt={meal.strMeal} />
-            <Link to={`/meal/${meal.idMeal}`}>View Meal</Link>
-          </div>
+          <Link
+            to={`/meal/${meal.idMeal}`}
+            key={meal.strMeal}
+            className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-1 mb-2 shadow border rounded bg-white mb-5 cursor-default"
+          >
+            <div className="w-full">
+              <img
+                className="w-full"
+                src={meal.strMealThumb}
+                alt={meal.strMeal}
+              />
+            </div>
+            <div className="w-full bg-orange-300">
+              <h3 className="font-bold text-2xl pl-3">{meal.strMeal}</h3>
+            </div>
+            <div className="w-full flex justify-center mt-3">
+              <div className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer">
+                View Meal
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
