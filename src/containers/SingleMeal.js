@@ -93,9 +93,8 @@ function SingleMeal(props) {
               <li className="pl-1 bg-orange-300">
                 <span className="font-bold">Measure - Ingredient</span>
               </li>
-              {ingredients.map((e, i) => (
-                // eslint-disable-next-line
-                <li className="pl-1 text-gray-800" key={i}>
+              {ingredients.map(e => (
+                <li className="pl-1 text-gray-800" key={e}>
                   {e}
                 </li>
               ))}
