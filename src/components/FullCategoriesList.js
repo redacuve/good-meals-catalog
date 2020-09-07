@@ -14,7 +14,7 @@ function FullCategoriesList(props) {
             key={elem.idCategory}
             to={`/category/${elem.strCategory}`}
           >
-            <div className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex">
+            <div className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex mt-1">
               <img
                 className="w-full"
                 src={elem.strCategoryThumb}
@@ -30,7 +30,7 @@ function FullCategoriesList(props) {
                   {elem.strCategoryDescription}
                 </p>
               </div>
-              <div className="w-full flex justify-center mt-3">
+              <div className="w-full flex justify-center mt-3 mb-1">
                 <div className="bg-transparent hover:bg-blue-500 text-blue-700 text-sm font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   View Category
                 </div>

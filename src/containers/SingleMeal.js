@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import GetMeal from '../actions/GetMeal';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
@@ -48,7 +49,7 @@ function SingleMeal(props) {
         </div>
         <div className="mb-2 w-full sm:w-3/4 md:w-1/2 lg:w-2/3 lg:order-3 mx-auto">
           <div className="flex flex-wrap justify-center items-center">
-            <div className="w-1/3 pr-1">
+            <Link to={`/area/${meal.meal.strArea}`} className="w-1/3 pr-1">
               <img
                 className="w-full"
                 src={`/assets/img/${meal.meal.strArea}.jpg`}
@@ -57,7 +58,7 @@ function SingleMeal(props) {
               <div className="w-full bg-orange-300 text-center">
                 <p className="font-bold">{meal.meal.strArea}</p>
               </div>
-            </div>
+            </Link>
             <div className="w-2/3">
               <p className="bg-gray-800 text-white font-bold">Source:</p>
               <div className="overflow-x-auto">
