@@ -13,7 +13,7 @@ function CategoriesFilterReducer(state = { filter: '' }, action) {
       };
 
     default:
-      return { ...state };
+      return { ...state, filter: '' };
   }
 }
 

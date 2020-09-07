@@ -13,7 +13,7 @@ function AreasFilterReducer(state = { filter: '' }, action) {
       };
 
     default:
-      return { ...state };
+      return { ...state, filter: '' };
   }
 }
 
