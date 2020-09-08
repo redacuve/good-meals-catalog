@@ -11,7 +11,7 @@
 
 <!-- Project Header -->
   <p align="center">
-    <img src="logo.jpg" width="250">
+    <img src="src/assets/img/logo.jpg" width="250">
   <br>
   </p>
   <h1 align="center">Project Meals Catalog</h1>
@@ -58,19 +58,19 @@ On the Homepage you can see two columns, one is the list of the different catego
 #### Desktop
 
   <p align="center">
-    <img src="homeDesktop.png" width="450"><br>
-    <img src="categoryDesktop.png" width="450"><br>
-    <img src="searchDesktop.png" width="450"><br>
-    <img src="mealDesktop.png" width="450"><br>
+    <img src="src/assets/img/homeDesktop.png" width="450"><br>
+    <img src="src/assets/img/categoryDesktop.png" width="450"><br>
+    <img src="src/assets/img/searchDesktop.png" width="450"><br>
+    <img src="src/assets/img/mealDesktop.png" width="450"><br>
   </p>
 
 #### Mobile
 
   <p align="center">
-    <img src="homeMobile.png" width="450"><br>
-    <img src="categoryMobile.png" width="450"><br>
-    <img src="searchMobile.png" width="450"><br>
-    <img src="mealMobile.png" width="450"><br>
+    <img src="src/assets/img/homeMobile.png" width="450"><br>
+    <img src="src/assets/img/categoryMobile.png" width="450"><br>
+    <img src="src/assets/img/searchMobile.png" width="450"><br>
+    <img src="src/assets/img/mealMobile.png" width="450"><br>
   </p>
 
 ## Built With
