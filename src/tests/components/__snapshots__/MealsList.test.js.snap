@@ -1,0 +1,991 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1 1`] = `
+<div>
+  <h2
+    className="text-indigo-900 font-bold text-2xl"
+    data-testid="meallist-title"
+  >
+    Area
+  </h2>
+  <div
+    data-testid="meallist-container"
+  >
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/American"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="American"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/American.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            American
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/British"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="British"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/British.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            British
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Canadian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Canadian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Canadian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Canadian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Chinese"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Chinese"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Chinese.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Chinese
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Dutch"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Dutch"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Dutch.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Dutch
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Egyptian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Egyptian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Egyptian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Egyptian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/French"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="French"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/French.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            French
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Greek"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Greek"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Greek.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Greek
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Indian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Indian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Indian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Indian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Irish"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Irish"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Irish.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Irish
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Italian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Italian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Italian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Italian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Jamaican"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Jamaican"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Jamaican.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Jamaican
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Japanese"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Japanese"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Japanese.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Japanese
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Kenyan"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Kenyan"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Kenyan.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Kenyan
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Malaysian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Malaysian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Malaysian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Malaysian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Mexican"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Mexican"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Mexican.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Mexican
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Moroccan"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Moroccan"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Moroccan.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Moroccan
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Polish"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Polish"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Polish.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Polish
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Russian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Russian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Russian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Russian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Spanish"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Spanish"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Spanish.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Spanish
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Thai"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Thai"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Thai.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Thai
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Tunisian"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Tunisian"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Tunisian.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Tunisian
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Turkish"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Turkish"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Turkish.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Turkish
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Unknown"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Unknown"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Unknown.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Unknown
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
+      href="/area/Vietnamese"
+      onClick={[Function]}
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+      >
+        <img
+          alt="Vietnamese"
+          className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+          src="/assets/img/Vietnamese.jpg"
+        />
+      </div>
+      <div
+        className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+      >
+        <div
+          className="w-full bg-orange-300 text-center"
+        >
+          <h3
+            className="font-bold text-2xl"
+            data-testid="meal-title"
+          >
+            Vietnamese
+          </h3>
+        </div>
+        <div
+          className="w-full flex justify-center mt-3 mb-1"
+        >
+          <div
+            className="bg-transparent hover:bg-orange-500 text-orange-700 text-sm font-semibold hover:text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded cursor-pointer"
+          >
+            View Category
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

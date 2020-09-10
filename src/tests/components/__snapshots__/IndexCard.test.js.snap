@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1 1`] = `
+<a
+  className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+  data-testid="single-index-card"
+  href="/category/Seafood"
+  onClick={[Function]}
+>
+  <div
+    className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex"
+  >
+    <img
+      alt="Seafood"
+      className="w-full py-1 md:px-1 lg:px-0 xl:px-1"
+      src="https://www.themealdb.com/images/category/seafood.png"
+    />
+  </div>
+  <div
+    className="w-full md:w-1/2 lg:w-full xl:w-1/2"
+  >
+    <div
+      className="w-full bg-indigo-300 text-center"
+    >
+      <h3
+        className="font-bold text-2xl"
+        data-testid="meal-title"
+      >
+        Seafood
+      </h3>
+    </div>
+    <div
+      className="w-full bg-indigo-100"
+    >
+      <p
+        className="text-gray-700 text-lg px-3"
+      >
+        Seafood is any form of sea life regarded as food by humans. Seafood prominently includes fish and shellfish. Shellfish include various species of molluscs, crustaceans, and echinoderms. Historically, sea mammals such as whales and dolphins have been consumed as food, though that happens to a lesser extent in modern times. Edible sea plants, such as some seaweeds and microalgae, are widely eaten as seafood around the world, especially in Asia (see the category of sea vegetables). In North America, although not generally in the United Kingdom, the term "seafood" is extended to fresh water organisms eaten by humans, so all edible aquatic life may be referred to as seafood. For the sake of completeness, this article includes all edible aquatic life.
+      </p>
+    </div>
+    <div
+      className="w-full flex justify-center mt-3 mb-1"
+    >
+      <div
+        className="bg-transparent hover:bg-indigo-500 text-indigo-700 text-sm font-semibold hover:text-white py-2 px-4 border border-indigo-500 hover:border-transparent rounded cursor-pointer"
+      >
+        View Category
+      </div>
+    </div>
+  </div>
+</a>
+`;
