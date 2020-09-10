@@ -6,8 +6,8 @@ function MealsList(props) {
   const { title, data, str } = props;
   return (
     <div>
-      <h2 className="text-indigo-900 font-bold text-2xl">{title}</h2>
-      <div>
+      <h2 className="text-indigo-900 font-bold text-2xl" data-testid="meallist-title">{title}</h2>
+      <div data-testid="meallist-container">
         {data.map(meal => (
           <IndexCard key={meal.strArea} color="orange" hasDescription={false} hasImage={false} linkTo="area" meal={meal} str={str} />
         ))}

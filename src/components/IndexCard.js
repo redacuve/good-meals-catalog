@@ -11,6 +11,7 @@ function IndexCard(props) {
       key={meal[str]}
       to={`/${linkTo}/${meal[str]}`}
       className="shadow border rounded bg-white mb-5 cursor-default flex flex-wrap items-center justify-center"
+      data-testid="single-index-card"
     >
       <div className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 flex">
         <img
@@ -23,7 +24,7 @@ function IndexCard(props) {
       </div>
       <div className="w-full md:w-1/2 lg:w-full xl:w-1/2">
         <div className={`w-full bg-${color}-300 text-center`}>
-          <h3 className="font-bold text-2xl">{meal[str]}</h3>
+          <h3 className="font-bold text-2xl" data-testid="meal-title">{meal[str]}</h3>
         </div>
         {hasDescription && (
           <div className={`w-full bg-${color}-100`}>

@@ -6,8 +6,8 @@ function FullCategoriesList(props) {
   const { list } = props;
   return (
     <div>
-      <h2 className="text-indigo-900 font-bold text-2xl">Categories</h2>
-      <div>
+      <h2 className="text-indigo-900 font-bold text-2xl" data-testid="fullcategorieslist-text">Categories</h2>
+      <div data-testid="cards-container">
         {list.map(meal => (
           <IndexCard key={meal.strCategory} color="blue" hasDescription hasImage linkTo="category" meal={meal} str="strCategory" />
         ))}

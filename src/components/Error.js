@@ -19,10 +19,10 @@ function Error(props) {
           </svg>
         </div>
         <div>
-          <p className="font-bold">
+          <p className="font-bold" data-testid="error-text">
             An error has ocurred, Please try again later.
           </p>
-          <ul className="list-disc">
+          <ul className="list-disc" data-testid="error-list">
             {errors.map(error => (
               <li className="text-sm" key={error}>
                 {error}

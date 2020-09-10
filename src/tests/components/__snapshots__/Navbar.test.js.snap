@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1 1`] = `
+<nav
+  className="w-full"
+  data-testid="navbar"
+>
+  <div
+    className="w-full bg-gray-100 border-b border-grey-light"
+  >
+    <div
+      className="w-full container mx-auto flex flex-wrap items-center justify-center md:justify-between py-4"
+    >
+      <a
+        className="flex items-center"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Good Meals Logo"
+          className="h-16 md:h-12"
+          src="goodmeals.png"
+        />
+        <h1
+          className="font-bold text-indigo-900 text-base font-extrabold text-xl w-minc ml-1 leading-5"
+          data-testid="title-logo"
+        >
+          Good Meals Catalog
+        </h1>
+      </a>
+      <div
+        className="w-full sm:w-2/3 flex flex-wrap justify-center mt-2 lg:justify-end"
+      >
+        <input
+          className="shadow appearance-none border rounded py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
+          data-testid="searchbar"
+          id="seachbar"
+          onKeyPress={[Function]}
+          type="search"
+        />
+        <button
+          className="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full"
+          data-testid="search-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

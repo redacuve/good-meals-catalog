@@ -137,6 +137,12 @@ Also, this project is fully responsive for all types of devices, mobile, tablet,
     ```
     $ npm start
     ```
+    
+*   Run this command to run the tests:
+    ```
+    $ npm test
+    ```
+
 *   Also you can build this app for production, react are going to make a build folder with minified files, and filenames with hashes for best performance
     ```
     $ npm build
